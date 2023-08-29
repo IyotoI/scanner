@@ -35,6 +35,7 @@
 
         Quagga.onDetected((data) => {
             console.log(data);
+            alert(data)
             document.querySelector('#resultado').innerHTML = data.codeResult.code
         })
     </script>
