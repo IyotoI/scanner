@@ -10,6 +10,7 @@
 <body>
     <div id="resultado"></div>
     <div id="camera"></div>
+    <div id="err"></div>
 
     <script src="quagga.min.js"></script>
 
@@ -25,7 +26,7 @@
             }
         }, function (err) {
             if (err) {
-                console.log(err);
+                document.querySelector('#err').innerHTML = err
                 return
             }
             console.log("Initialization finished. Ready to start");
